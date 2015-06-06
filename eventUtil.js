@@ -74,5 +74,12 @@ var eventUtil = {
         } else {
             return -event.detail * 40;
         }
+    },
+    getCharCode:function(event){
+        if(typeof event.charCode=="number"){
+            return event.charCode;
+        }else{
+            return event.keyCode;
+        }
     }
 };
